@@ -24,7 +24,6 @@ body {
   font-weight: bolder;
   font-style: italic;
   position: relative;
-  right:15px;
   top: 30%;
 }
 #social-media div[class="twitter"] {
@@ -50,6 +49,9 @@ footer {
   background-color: #333;
   color: white;
   height: 10%;
+}
+footer i {
+  margin-left:20px !important;
 }
 .love {
   -webkit-box-orient: horizontal;
