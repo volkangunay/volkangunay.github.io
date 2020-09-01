@@ -1,63 +1,76 @@
 body {
-    font-family: "Poppins", sans-serif;
-    margin: 0px;
-    padding: 0px;
-  }
-  #social-media div {
-    text-align: center;
-    background-color: red;
-    height: 20%;
-  }
-  #social-media a {
-    text-decoration: none;
-  }
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+/* -- Social-Media -- */
+
+#social-media {
+  height: 90%;
+}
+
+#social-media div {
+  text-align: center;
+  height: calc(100% / 5);
+}
+#social-media a {
+  text-decoration: none;
+}
+#social-media a div span {
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+  font-style: italic;
+  position: relative;
+  top: 30%;
+}
+#social-media div[class="twitter"] {
+  background: linear-gradient(45deg, #66757f, #00acee, #36d8ff, #f5f8fa, #ffffff);
+}
+#social-media div[class="gitlab"] {
+  background: linear-gradient(-120deg, #fca326, #fc6d26, #e24329, #554488);
+}
+#social-media div[class="instagram"] {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+#social-media div[class="linkedin"] {
+  background: linear-gradient(45deg, #0077b5, #caccce, #00a0dc);
+}
+#social-media div[class="github"] {
+  background-color: black;
+}
+
+/* -- Footer -- */
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  height: 10%;
+}
+.love {
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer svg {
+  margin: 0px 10px;
+}
+
+/* -- Responsive -- */
+@media screen and (max-width: 1000px) {
   #social-media a div span {
-    color: white;
-    font-size: 35px;
-    font-weight: bolder;
-    font-style: italic;
     position: relative;
-    top: 30%;
+    top: 40%;
   }
-  #social-media div[class="twitter"] {
-    background: linear-gradient(
-      45deg,
-      #66757f,
-      #00acee,
-      #36d8ff,
-      #f5f8fa,
-      #ffffff
-    );
-  }
-  #social-media div[class="gitlab"] {
-    background: linear-gradient(
-      -120deg,
-      #fca326,
-      #fc6d26,
-      #e24329,
-      #554488
-    );
-  }
-  #social-media div[class="instagram"] {
-    background: linear-gradient(
-      45deg,
-      #405de6,
-      #5851db,
-      #833ab4,
-      #c13584,
-      #e1306c,
-      #fd1d1d
-    );
-  }
-  #social-media div[class="linkedin"] {
-    background: linear-gradient(45deg, #0077b5, #caccce, #00a0dc);
-  }
-  #social-media div[class="github"] {
-    background-color: black;
-  }
-  @media screen and (max-width: 1000px) {
-    #social-media a div span {
-      position: relative;
-      top: 40%;
-    }
-  }
+}
