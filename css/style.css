@@ -24,6 +24,7 @@ body {
   font-weight: bolder;
   font-style: italic;
   position: relative;
+  right:15px;
   top: 30%;
 }
 #social-media div[class="twitter"] {
@@ -71,6 +72,6 @@ footer svg {
 @media screen and (max-width: 1000px) {
   #social-media a div span {
     position: relative;
-    top: 40%;
+    top: 25%;
   }
 }
