@@ -74,6 +74,6 @@ footer svg {
 @media screen and (max-width: 1000px) {
   #social-media a div span {
     position: relative;
-    top: 25%;
+    top: 30%;
   }
 }
