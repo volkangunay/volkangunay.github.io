@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+main {
+    margin: 3em;
+    letter-spacing: 1.3px;
+}
+main .title {
+    border-bottom: 2px solid #d8d8d8;
+    padding-bottom: 20px;
+    max-width: 800px;
+}
+main h2 {
+    font-weight: bolder;
+}
+main .about {
+    max-width: 800px;
+    line-height: 1.5em;
+    border-bottom: 2px solid #d8d8d8;
+}
+main .contact {
+    border-bottom: 2px solid #d8d8d8;
+    max-width: 800px;
+    padding-bottom: 10px;
+}
+main .title__tech-stack {
+    padding-top: 10px;
+}
+main .tech-stack {
+    max-width: 800px;
+    line-height: 2.7em;
+    border-bottom: 2px solid #d8d8d8;
+    padding-bottom: 20px;
+}
+main .tech-stack span {
+    background-color: #e8e8e8;
+    border-radius: 2px;
+    padding: 7px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    border: 1px solid #a1a1a1;
+}
+main .tech-stack span:hover {
+    background-color: #a1a1a1;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    color: white;
+    cursor: pointer;
+}
+main .experience {
+    max-width: 800px;
+    border-bottom: 2px solid #d8d8d8;
+}
+main .experience a {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+}
+main .experience a:hover {
+    text-decoration: none;
+}
+main .experience .date {
+    float: right;
+}
+main .contact h4 span {
+    background-color: #e8e8e8;
+    padding: 3px;
+}
+
+@media screen and (max-width: 581px) {
+    main .experience .date {
+        display: none;
+    }
+}
