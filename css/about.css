@@ -6,32 +6,32 @@ body {
     box-sizing: border-box;
 }
 main {
-    margin: 3em;
+    margin: 2em;
     letter-spacing: 1.3px;
+    display: flex;
+}
+main .left {
+    max-width: 100%;
 }
 main .title {
     border-bottom: 2px solid #d8d8d8;
     padding-bottom: 20px;
-    max-width: 800px;
 }
 main h2 {
     font-weight: bolder;
 }
 main .about {
-    max-width: 800px;
     line-height: 1.5em;
     border-bottom: 2px solid #d8d8d8;
 }
 main .contact {
     border-bottom: 2px solid #d8d8d8;
-    max-width: 800px;
     padding-bottom: 10px;
 }
 main .title__tech-stack {
     padding-top: 10px;
 }
 main .tech-stack {
-    max-width: 800px;
     line-height: 2.7em;
     border-bottom: 2px solid #d8d8d8;
     padding-bottom: 20px;
@@ -52,7 +52,6 @@ main .tech-stack span:hover {
     cursor: pointer;
 }
 main .experience {
-    max-width: 800px;
     border-bottom: 2px solid #d8d8d8;
 }
 main .experience a {
