@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
 }
 main {
-    margin: 2em;
+    margin: 1.5em;
     letter-spacing: 1.3px;
     display: flex;
 }
@@ -15,7 +15,7 @@ main .left {
 }
 main .title {
     border-bottom: 2px solid #d8d8d8;
-    padding-bottom: 20px;
+    padding-bottom: 6px;
 }
 main h2 {
     font-weight: bolder;
@@ -24,17 +24,11 @@ main .about {
     line-height: 1.5em;
     border-bottom: 2px solid #d8d8d8;
 }
-main .contact {
-    border-bottom: 2px solid #d8d8d8;
-    padding-bottom: 10px;
-}
 main .title__tech-stack {
-    padding-top: 10px;
 }
 main .tech-stack {
     line-height: 2.7em;
     border-bottom: 2px solid #d8d8d8;
-    padding-bottom: 20px;
 }
 main .tech-stack span {
     background-color: #e8e8e8;
@@ -69,9 +63,16 @@ main .contact h4 span {
     background-color: #e8e8e8;
     padding: 3px;
 }
-
+@media screen and (min-width: 582px) {
+    main .experience .date_web {
+        display: none;
+    }
+}
 @media screen and (max-width: 581px) {
     main .experience .date {
         display: none;
+    }
+    main .experience .date_web {
+        display: block;
     }
 }
