@@ -1,6 +1,5 @@
 body {
     margin: 0px;
-    padding: 0px;
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
@@ -23,8 +22,6 @@ main h2 {
 main .about {
     line-height: 1.5em;
     border-bottom: 2px solid #d8d8d8;
-}
-main .title__tech-stack {
 }
 main .tech-stack {
     line-height: 2.7em;
