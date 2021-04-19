@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html
+  __fvdsurfcanyoninserted="1"
+  class="clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"
+>
+  <head>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .bgimg {
+        background-image: url("./forest.jpg");
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+      }
+
+      .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      hr {
+        margin: auto;
+        width: 40%;
+      }
+    </style>
+    <script>
+      window.open = function () {};
+      window.print = function () {};
+      // Support hover state for mobile.
+      if (false) {
+        window.ontouchstart = function () {};
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
+    ></script>
+    <meta content="clickberry-extension-here" />
+    <meta content="clickberry-extension-here" />
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+    <script
+      type="text/javascript"
+      src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
+    ></script>
+    <meta content="clickberry-extension-here" />
+  </head>
+  <body>
+    <div class="bgimg">
+      <div class="middle">
+        <h2>
+          Nil Gemalmaz
+        </h2>
+        <hr />
+        <p id="demo" style="font-size: 30px"></p>
+      </div>
+    </div>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Wendy+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script></script>
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+
+    <script>
+      var countDownDate = new Date("April 19, 2021 16:00:00").getTime();
+
+      var countdownfunction = setInterval(function () {
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("demo").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+          clearInterval(countdownfunction);
+          window.location.replace("https://www.volkangunay.com/nil/dogumgunu.html");
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
