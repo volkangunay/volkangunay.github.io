@@ -3,9 +3,11 @@ body {
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+    font-size: 20px;
 }
 main {
-    margin: 1.5em;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     letter-spacing: 1.3px;
     display: flex;
 }
@@ -24,10 +26,10 @@ main .about {
     border-bottom: 2px solid #d8d8d8;
 }
 main .about h4 a {
-    text-decoration:none;
-    padding-top:20px;
+    text-decoration: none;
+    margin-top: 20px;
     font-weight: bold;
-    padding-right:20px;
+    margin-right: 20px;
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
 }
@@ -35,52 +37,52 @@ main .about h4 a span[class="twitter"]:hover {
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
     background-color: #00acee;
-    padding:5px;
+    padding: 5px;
     border-radius: 5px;
-    color:white;
+    color: white;
 }
 main .about h4 a span[class="instagram"]:hover {
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
     background-color: #e1306c;
-    padding:5px;
+    padding: 5px;
     border-radius: 5px;
-    color:white;
+    color: white;
 }
 main .about h4 a span[class="github"]:hover {
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
     background-color: black;
-    padding:5px;
+    padding: 5px;
     border-radius: 5px;
-    color:white;
+    color: white;
 }
 main .about h4 a span[class="linkedin"]:hover {
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
     background-color: #0178a3;
-    padding:5px;
+    padding: 5px;
     border-radius: 5px;
-    color:white;
+    color: white;
 }
 main .about h4 a span[class="twitter"] {
     /* color: linear-gradient(45deg, #66757f, #00acee, #36d8ff, #f5f8fa, #ffffff); */
     color: #00acee;
-    padding:5px;
+    padding: 5px;
 }
 main .about h4 span[class="github"] {
     color: black;
-    padding:5px;
+    padding: 5px;
 }
 main .about h4 span[class="instagram"] {
     /* color: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); */
-    color:purple;
-    padding:5px;
+    color: #e1306c;
+    padding: 5px;
 }
 main .about h4 span[class="linkedin"] {
     /* color: linear-gradient(45deg, #0077b5, #caccce, #00a0dc); */
     color: #00a0dc;
-    padding:5px;
+    padding: 5px;
 }
 main .tech-stack {
     line-height: 2.7em;
