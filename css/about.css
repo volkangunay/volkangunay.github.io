@@ -110,7 +110,7 @@ main .experience a {
 }
 main .experience a:hover {
     text-decoration: none;
-    border-bottom: 3px dotted rgb(255, 85, 85);
+    border-bottom: 3px solid rgb(255, 85, 85);
 }
 main .experience .date {
     float: right;
