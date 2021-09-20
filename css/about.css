@@ -33,52 +33,80 @@ main .about h4 a {
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
 }
-main .about h4 a span[class="twitter"]:hover {
+main .about h4 a span[class="twitter"] {
+    background-color: #00acee;
+    color: white;
+    border-radius: 5px;
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
-    background-color: #00acee;
     padding: 5px;
+    border: 2px solid #00acee;
+}
+main .about h4 a span[class="twitter"]:hover {
+    background-color: #ffffff;
+    color: #00acee;
+    border: 2px solid #00acee;
     border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    box-shadow: #00acee 5px 5px, #008ec6 10px 10px;
+    padding: 5px;
+}
+main .about h4 a span[class="instagram"] {
+    background-color: #e1306c;
     color: white;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    padding: 5px;
+    border: 2px solid #e1306c;
 }
 main .about h4 a span[class="instagram"]:hover {
+    background-color: #ffffff;
+    color: #e1306c;
+    border: 2px solid #e1306c;
+    border-radius: 5px;
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
-    background-color: #e1306c;
+    box-shadow: #e1306c 5px 5px, #a4234e 10px 10px;
     padding: 5px;
-    border-radius: 5px;
+}
+main .about h4 a span[class="github"] {
+    background-color: black;
     color: white;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    padding: 5px;
+    border: 2px solid black;
 }
 main .about h4 a span[class="github"]:hover {
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
-    background-color: black;
+    box-shadow: rgb(58, 57, 57) 5px 5px, black 10px 10px;
     padding: 5px;
-    border-radius: 5px;
+}
+main .about h4 a span[class="linkedin"] {
+    background-color: #0178a3;
     color: white;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    padding: 5px;
+    border: 2px solid #0178a3;
 }
 main .about h4 a span[class="linkedin"]:hover {
+    background-color: #ffffff;
+    color: #0178a3;
+    border: 2px solid #0178a3;
+    border-radius: 5px;
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
-    background-color: #0178a3;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-}
-main .about h4 a span[class="twitter"] {
-    color: #00acee;
-    padding: 5px;
-}
-main .about h4 span[class="github"] {
-    color: black;
-    padding: 5px;
-}
-main .about h4 span[class="instagram"] {
-    color: #e1306c;
-    padding: 5px;
-}
-main .about h4 span[class="linkedin"] {
-    color: #00a0dc;
+    box-shadow: #0178a3 5px 5px, #003042 10px 10px;
     padding: 5px;
 }
 main .tech-stack {
