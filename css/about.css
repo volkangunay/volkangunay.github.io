@@ -18,9 +18,9 @@ main .title {
     border-bottom: 2px solid #d8d8d8;
     padding-bottom: 6px;
 }
-main h2 {
+/* main h2 {
     font-weight: bolder;
-}
+} */
 main .about {
     line-height: 1.5em;
     border-bottom: 2px solid #d8d8d8;
@@ -28,7 +28,7 @@ main .about {
 main .about h4 a {
     text-decoration: none;
     margin-top: 20px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-right: 20px;
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
