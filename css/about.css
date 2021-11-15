@@ -132,6 +132,9 @@ main .experience a:hover {
     text-decoration: none;
     border-bottom: 3px solid rgb(255, 85, 85);
 }
+main .experience .date {
+    float: right;
+}
 main .volunteer .date {
     float: right;
 }
