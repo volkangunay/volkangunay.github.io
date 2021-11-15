@@ -197,4 +197,7 @@ main .contact h4 span {
     main .organizations .date_web {
         display: block;
     }
+    main .about h4 a {
+        display: block;
+    }
 }
