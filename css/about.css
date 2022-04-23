@@ -1,40 +1,47 @@
 body {
     margin: 0px;
     scroll-behavior: smooth;
-    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+
     font-size: 20px;
-}
-main {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
     letter-spacing: 1.3px;
+    font-family: sans-serif;
+
     display: flex;
     justify-content: center;
     background-color: #f5f5f5;
 }
-main .left {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+* [class*="--title"] {
+    text-align: center;
+    font-size: 40px;
+}
+
+.main {
     max-width: 900px;
     background-color: white;
     padding-inline: 20px;
     border-left: 1px dashed black;
     border-right: 1px dashed black;
 }
-main .title {
-    border-bottom: 2px solid #d8d8d8;
+.header .header--title {
     padding-bottom: 6px;
     text-align: center;
 }
-main .about {
-    line-height: 1.5em;
-    border-bottom: 2px solid #d8d8d8;
-}
-main .about .socials {
+
+.socials {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-main .about h4 a {
+.socials a {
     text-decoration: none;
     margin-top: 20px;
     font-weight: bolder;
@@ -42,7 +49,7 @@ main .about h4 a {
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
 }
-main .about h4 a span[class="twitter"] {
+.socials a span[class="twitter"] {
     border: 1px solid #00acee;
     color: #00acee;
     border-radius: 5px;
@@ -51,7 +58,7 @@ main .about h4 a span[class="twitter"] {
     padding: 5px;
     border: 2px solid #00acee;
 }
-main .about h4 a span[class="twitter"]:hover {
+.socials a span[class="twitter"]:hover {
     background-color: #00acee;
     color: white;
     border-radius: 5px;
@@ -59,7 +66,7 @@ main .about h4 a span[class="twitter"]:hover {
     -webkit-transition: 0.4s ease-in-out;
     padding: 5px;
 }
-main .about h4 a span[class="instagram"] {
+.socials a span[class="instagram"] {
     border: 1px solid #e1306c;
     color: #e1306c;
     border-radius: 5px;
@@ -68,7 +75,7 @@ main .about h4 a span[class="instagram"] {
     padding: 5px;
     border: 2px solid #e1306c;
 }
-main .about h4 a span[class="instagram"]:hover {
+.socials a span[class="instagram"]:hover {
     background-color: #e1306c;
     color: white;
     border-radius: 5px;
@@ -76,7 +83,7 @@ main .about h4 a span[class="instagram"]:hover {
     -webkit-transition: 0.4s ease-in-out;
     padding: 5px;
 }
-main .about h4 a span[class="github"] {
+.socials a span[class="github"] {
     border: 1px solid black;
     color: black;
     border-radius: 5px;
@@ -85,7 +92,7 @@ main .about h4 a span[class="github"] {
     padding: 5px;
     border: 2px solid black;
 }
-main .about h4 a span[class="github"]:hover {
+.socials a span[class="github"]:hover {
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -93,7 +100,7 @@ main .about h4 a span[class="github"]:hover {
     -webkit-transition: 0.4s ease-in-out;
     padding: 5px;
 }
-main .about h4 a span[class="linkedin"] {
+.socials a span[class="linkedin"] {
     border: 1px solid #0178a3;
     color: #0178a3;
     border-radius: 5px;
@@ -102,7 +109,7 @@ main .about h4 a span[class="linkedin"] {
     padding: 5px;
     border: 2px solid #0178a3;
 }
-main .about h4 a span[class="linkedin"]:hover {
+.socials a span[class="linkedin"]:hover {
     background-color: #0178a3;
     color: white;
     border-radius: 5px;
@@ -110,11 +117,10 @@ main .about h4 a span[class="linkedin"]:hover {
     -webkit-transition: 0.4s ease-in-out;
     padding: 5px;
 }
-main .tech-stack {
-    line-height: 2.7em;
-    border-bottom: 2px solid #d8d8d8;
+.techStack--languages {
+    line-height: 3.5rem;
 }
-main .tech-stack span {
+.techStack .techStack--languageBox {
     background-color: #e8e8e8;
     border-radius: 2px;
     padding: 7px;
@@ -122,91 +128,55 @@ main .tech-stack span {
     -webkit-transition: 0.3s ease-in-out;
     border: 1px solid #a1a1a1;
 }
-main .tech-stack span:hover {
+.techStack .techStack--languageBox:hover {
     background-color: #a1a1a1;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
     color: white;
     cursor: pointer;
 }
-main .experience {
-    border-bottom: 2px solid #d8d8d8;
-}
-main .experience a {
-    text-decoration: underline;
-    font-weight: bolder;
-    color: black;
-}
-main .experience a:hover {
+.experiences a {
+    border-bottom: 3px solid black;
     text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+}
+.experiences a:hover {
+    text-decoration: none;
+    color: rgb(255, 85, 85);
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
     border-bottom: 3px solid rgb(255, 85, 85);
 }
-main .experience .date {
-    float: right;
+.experiences--section {
+    border-bottom: 1px dotted black;
 }
-main .volunteer .date {
-    float: right;
+.experiences--section:last-child {
+    padding-bottom: 30px;
 }
-main .volunteer {
-    border-bottom: 2px solid #d8d8d8;
+.experiences--section__summary {
+    padding: 15px;
+    margin-block-end: 0;
 }
-main .organizations .date {
-    float: right;
+.experiences--section__summary li {
+    list-style-type: disclosure-closed;
 }
-main .organizations {
-    border-bottom: 2px solid #d8d8d8;
+.volunteer--section {
+    border-bottom: 1px dotted black;
+}
+.organizations--section {
+    border-bottom: 1px dotted black;
 }
 
-main .education .date {
-    float: right;
+.education--section {
+    border-bottom: 1px dotted black;
 }
-main .education {
-    border-bottom: 2px solid #d8d8d8;
+.contact {
+    text-align: center;
+    padding-bottom: 5rem;
 }
-main .contact h4 span {
+.contact h4 span {
     background-color: #e8e8e8;
     padding: 3px;
-}
-@media screen and (min-width: 582px) {
-    main .experience .date_web {
-        display: none;
-    }
-    main .volunteer .date_web {
-        display: none;
-    }
-    main .education .date_web {
-        display: none;
-    }
-    main .organizations .date_web {
-        display: none;
-    }
-}
-@media screen and (max-width: 581px) {
-    main .experience .date {
-        display: none;
-    }
-    main .experience .date_web {
-        display: block;
-    }
-    main .volunteer .date {
-        display: none;
-    }
-    main .volunteer .date_web {
-        display: block;
-    }
-    main .education .date {
-        display: none;
-    }
-    main .education .date_web {
-        display: block;
-    }
-    main .organizations .date {
-        display: none;
-    }
-    main .organizations .date_web {
-        display: block;
-    }
-    main .about h4 a {
-        display: block;
-    }
 }
